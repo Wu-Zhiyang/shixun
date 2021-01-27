@@ -1,0 +1,21 @@
+<div class="container d-flex justify-content-center login-content col-md-6">
+  <form [formGroup]="myForm" class="col align-self-center">
+    <h3 class="d-flex justify-content-center">用户注册</h3>
+    <img
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F82%2F92%2F855c497ac47c829.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611373293&t=76c7f44435fd6b0cee4475d56eaa4e7b"
+      class="img-fluid">
+    <div class="form-group">
+      <label for="id">用户id</label>
+      <input type="text" class="form-control" id="id" name="id" [formControl]='id'>
+    </div>
+    <div class="form-group">
+      <label for="userName">用户名</label>
+      <input type="text" class="form-control" id="userName" name="userName" [formControl]='userName'>
+    </div>
+    <div class="form-group">
+      <label for="password">密码</label>
+      <input type="password" class="form-control" id="password" name="password" [formControl]='password'>
+      <button type="submit" class="btn btn-success btn-block mt-3" (click)="adduser()">注册</button>
+    </div>
+  </form>
+</div>

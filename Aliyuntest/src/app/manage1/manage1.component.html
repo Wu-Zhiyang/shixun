@@ -1,0 +1,266 @@
+<div class="card-columns text-center ">
+  <div class="card bg-light border-danger col-md-12">
+    <img src="./assets/imgs/灯.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">设备信息</h5>
+      <p class="card-text">LED</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-block " data-toggle="modal" data-target="#staticBackdrop"
+        (click)="LED()">
+        查看
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">设备详情</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">设备id</th>
+                    <th scope="col">设备名称</th>
+                    <th scope="col">设备信息</th>
+                    <th scope="col">设备状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let user of users$ | async; '>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.type}}</td>
+                    <td>{{user.value}}</td>
+                    <td>{{user.cz}}</td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-light border-danger col-md-12">
+    <img src="./assets/imgs/风扇.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">设备信息</h5>
+      <p class="card-text">风扇</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#staticBackdrop"
+        (click)="FAN()">
+        查看
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">设备详情</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">设备id</th>
+                    <th scope="col">设备名称</th>
+                    <th scope="col">设备信息</th>
+                    <th scope="col">设备状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let user of users$ | async; '>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.type}}</td>
+                    <td>{{user.value}}</td>
+                    <td>{{user.cz}}</td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-light border-danger col-md-12">
+    <img src="./assets/imgs/空调.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">设备信息</h5>
+      <p class="card-text">空调</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#staticBackdrop"
+        (click)="AC()">
+        查看
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">设备详情</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">设备id</th>
+                    <th scope="col">设备名称</th>
+                    <th scope="col">设备信息</th>
+                    <th scope="col">设备状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let user of users$ | async; '>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.type}}</td>
+                    <td>{{user.value}}</td>
+                    <td>{{user.cz}}</td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-light border-danger col-md-12">
+    <img src="./assets/imgs/温度传感器.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">设备信息</h5>
+      <p class="card-text">温度传感器</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#staticBackdrop"
+        (click)="TEMP()">
+        查看
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">设备详情</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">设备id</th>
+                    <th scope="col">设备名称</th>
+                    <th scope="col">温度</th>
+                    <th scope="col">设备状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let user of users$ | async; '>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.type}}</td>
+                    <td>{{user.value}}</td>
+                    <td>{{user.cz}}</td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-light border-danger col-md-12">
+    <img src="./assets/imgs/温湿度传感器.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">设备信息</h5>
+      <p class="card-text">湿度传感器</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#staticBackdrop"
+        (click)="HUM()">
+        查看
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">设备详情</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">设备id</th>
+                    <th scope="col">设备名称</th>
+                    <th scope="col">湿度</th>
+                    <th scope="col">设备状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let user of users$ | async; '>
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.type}}</td>
+                    <td>{{user.value}}</td>
+                    <td>{{user.cz}}</td>
+                    <td>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
